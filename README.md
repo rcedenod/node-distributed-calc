@@ -1,4 +1,4 @@
-# node-distributed-calc
+# rpc-calculator
 
 RPC simple cliente-servidor en Node.js con `socket.io`. Un compilador lee una especificacion (`compiler/calculator.txt`) y genera stubs para el servidor y el cliente. El `Dispatcher` recibe solicitudes RPC, invoca metodos por reflexion y devuelve la respuesta.
 
@@ -79,6 +79,6 @@ main();
 ```
 
 ## Notas importantes
-- Los archivos en `client/` y `server/` marcados como ìGenerado automaticamenteî pueden ser sobrescritos al re-ejecutar el compilador.
+- Los archivos en `client/` y `server/` marcados como ‚ÄúGenerado automaticamente‚Äù pueden ser sobrescritos al re-ejecutar el compilador.
 - El `Dispatcher` usa reflexion: valida que exista la clase y el metodo, y luego ejecuta.
 - El formato de respuesta del servidor usa la propiedad `response`. Asegurate de que el cliente la lea correctamente.
